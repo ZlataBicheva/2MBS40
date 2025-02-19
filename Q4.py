@@ -25,27 +25,6 @@ plt.ylabel("Y")
 plt.title("Density of Sampled (X, Y) Pairs")
 plt.show()
 
-# Density ??
-
-# Define grid for X and Y values
-x_vals = np.linspace(0, 1, 100)
-y_vals = np.linspace(0, 0.5, 100)
-
-# Create meshgrid for X, Y
-X_grid, Y_grid = np.meshgrid(x_vals, y_vals)
-
-# Compute the theoretical density at each (X, Y) pair
-f_XY = 32 * X_grid * Y_grid
-
-# Plot the theoretical density as a contour plot
-plt.figure(figsize=(7, 5))
-contour = plt.contour(X_grid, Y_grid, f_XY, levels=20, cmap='Reds')
-plt.colorbar(contour, label="Density")
-plt.xlabel("X")
-plt.ylabel("Y")
-plt.title("Theoretical Joint Density f_XY(x, y) = 32xy")
-plt.show()
-
 # Exercise 4b
 
 # Marginal density of X
